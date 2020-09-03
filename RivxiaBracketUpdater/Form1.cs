@@ -39,7 +39,7 @@ namespace RivxiaBracketUpdater
 
        
 
-        // USEFUL METHODS STARTS HERE
+        // Methods that I use starts here.
 
         private void swapButton_Click(object sender, EventArgs e)
         {
