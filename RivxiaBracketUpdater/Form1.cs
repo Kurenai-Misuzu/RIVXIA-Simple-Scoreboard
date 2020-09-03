@@ -172,43 +172,43 @@ namespace RivxiaBracketUpdater
 
         private void updateButton_Click(object sender, EventArgs e) //UPDATE
         {
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 1 Name.txt", player1Name.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 2 Name.txt", player2Name.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 1 Twitter.txt", player1Twitter.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 2 Twitter.txt", player2Twitter.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 1 Score.txt", player1Score.Value.ToString());
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Player 2 Score.txt", player2Score.Value.ToString());
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Set.txt", setBox.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Commentator 1 Name.txt", commentator1Name.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Commentator 2 Name.txt", commentator2Name.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Commentator 1 Twitter.txt", commentator1Twitter.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Commentator 2 Twitter.txt", commentator2Twitter.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Misc 1.txt", miscBox1.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Misc 2.txt", miscBox2.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Misc 3.txt", miscBox3.Text);
-            System.IO.File.WriteAllText("..\\Scoreboard Output\\Misc 4.txt", miscBox4.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 1 Name.txt", player1Name.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 2 Name.txt", player2Name.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 1 Twitter.txt", player1Twitter.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 2 Twitter.txt", player2Twitter.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 1 Score.txt", player1Score.Value.ToString());
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 2 Score.txt", player2Score.Value.ToString());
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Set.txt", setBox.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Commentator 1 Name.txt", commentator1Name.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Commentator 2 Name.txt", commentator2Name.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Commentator 1 Twitter.txt", commentator1Twitter.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Commentator 2 Twitter.txt", commentator2Twitter.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Misc 1.txt", miscBox1.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Misc 2.txt", miscBox2.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Misc 3.txt", miscBox3.Text);
+            System.IO.File.WriteAllText(".\\Scoreboard Output\\Misc 4.txt", miscBox4.Text);
 
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Semis 1.txt", ws1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Semis 2.txt", ws2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Semis 3.txt", ws3.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Semis 4.txt", ws4.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Round One 1.txt", lro1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Round One 2.txt", lro2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Round One 3.txt", lro3.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Round One 4.txt", lro4.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Finals 1.txt", wf1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winners Finals 2.txt", wf2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Quarters 1.txt", lq1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Quarters 2.txt", lq2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Quarters 3.txt", lq3.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Quarters 4.txt", lq4.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Semis 1.txt", ls1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Semis 2.txt", ls2.Text); 
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Finals 1.txt", lf1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Losers Finals 2.txt", lf2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Grand Finals 1.txt", gf1.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Grand Finals 2.txt", gf2.Text);
-            System.IO.File.WriteAllText("..\\Bracket Output\\Winner.txt", winner.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Semis 1.txt", ws1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Semis 2.txt", ws2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Semis 3.txt", ws3.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Semis 4.txt", ws4.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Round One 1.txt", lro1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Round One 2.txt", lro2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Round One 3.txt", lro3.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Round One 4.txt", lro4.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Finals 1.txt", wf1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winners Finals 2.txt", wf2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Quarters 1.txt", lq1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Quarters 2.txt", lq2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Quarters 3.txt", lq3.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Quarters 4.txt", lq4.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Semis 1.txt", ls1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Semis 2.txt", ls2.Text); 
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Finals 1.txt", lf1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Losers Finals 2.txt", lf2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Grand Finals 1.txt", gf1.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Grand Finals 2.txt", gf2.Text);
+            System.IO.File.WriteAllText(".\\Bracket Output\\Winner.txt", winner.Text);
         }
 
         private void resetButton_Click(object sender, EventArgs e)
