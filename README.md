@@ -19,6 +19,6 @@ http://www.mediafire.com/file/q84ajv9h4f90331/file
 5. Press the Update Stream button to sync the program and the livestream.
 
 # Extra Notes
-to Edit the Top 8 Bracket, put the top 8 players where Players 1-8 are already filled out. 
+To Edit the Top 8 Bracket, put the top 8 players where Players 1-8 are already filled out. 
 Press the arrows right next to the player names to have them move on in the bracket. 
 Make sure that you press the Update Stream button to update the stream.
