@@ -1,9 +1,18 @@
 # Simple Scoreboard
 This program is designed to make updating the livestream layout for FGC / Smash Bros. Tournaments simple and efficient.
 
-# Current Version Download (1.0)
-http://www.mediafire.com/file/q84ajv9h4f90331/file
+# Current Version Download (1.1)
+https://www.mediafire.com/file/91325op83hw9mgb/RIVXIA_Simple_Scoreboard_1.1.zip/file
 
+# Previous Version Downloads
+(1.0) http://www.mediafire.com/file/q84ajv9h4f90331/file
+
+# Changelog
+- Added support for character icons (Touhou Hisotensoku ONLY)
+
+# To do
+- Add support for more games 
+- Put a drop down menu to select games
 # Features
 - Top 8 Bracket Updator
 - Scoreboard layout editor
