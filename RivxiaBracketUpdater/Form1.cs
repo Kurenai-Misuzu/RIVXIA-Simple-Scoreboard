@@ -45,11 +45,14 @@ namespace RivxiaBracketUpdater
         {
             String tempName = player1Name.Text;
             String tempTwitter = player1Twitter.Text;
+            object tempCharacter = player1Character.SelectedItem;
             decimal tempScore = player1Score.Value;
             player1Name.Text = player2Name.Text;
             player2Name.Text = tempName;
             player1Twitter.Text = player2Twitter.Text;
             player2Twitter.Text = tempTwitter;
+            player1Character.SelectedItem = player2Character.SelectedItem;
+            player2Character.SelectedItem = tempCharacter;
             player1Score.Value = player2Score.Value;
             player2Score.Value = tempScore;
         }
@@ -209,6 +212,133 @@ namespace RivxiaBracketUpdater
             System.IO.File.WriteAllText(".\\Bracket Output\\Grand Finals 1.txt", gf1.Text);
             System.IO.File.WriteAllText(".\\Bracket Output\\Grand Finals 2.txt", gf2.Text);
             System.IO.File.WriteAllText(".\\Bracket Output\\Winner.txt", winner.Text);
+
+            switch (player1Character.SelectedItem)
+            {
+                case "Sanae Kochiya":
+                    System.IO.File.Copy(".\\Character Images\\Sanae.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Cirno":
+                    System.IO.File.Copy(".\\Character Images\\Cirno.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Hong Meiling":
+                    System.IO.File.Copy(".\\Character Images\\Meiling.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Utsuho Reiuji":
+                    System.IO.File.Copy(".\\Character Images\\Utsuho.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Suwako Moriya":
+                    System.IO.File.Copy(".\\Character Images\\Suwako.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Reimu Hakurei":
+                    System.IO.File.Copy(".\\Character Images\\Reimu.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Marisa Kirisame":
+                    System.IO.File.Copy(".\\Character Images\\Marisa.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Alice Margatroid":
+                    System.IO.File.Copy(".\\Character Images\\Alice.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Patchouli Knowledge":
+                    System.IO.File.Copy(".\\Character Images\\Patchouli.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Sakuya Izayoi":
+                    System.IO.File.Copy(".\\Character Images\\Sakuya.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Youmu Konpaku":
+                    System.IO.File.Copy(".\\Character Images\\Youmu.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Remilia Scarlet":
+                    System.IO.File.Copy(".\\Character Images\\Remilia.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Yuyuko Saigyouji":
+                    System.IO.File.Copy(".\\Character Images\\Yuyuko.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Yukari Yakumo":
+                    System.IO.File.Copy(".\\Character Images\\Yukari.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Suika Ibuki":
+                    System.IO.File.Copy(".\\Character Images\\Suika.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Reisen Udongein Inaba":
+                    System.IO.File.Copy(".\\Character Images\\Reisen.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Aya Shameimaru":
+                    System.IO.File.Copy(".\\Character Images\\Aya.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Komachi Onozuka":
+                    System.IO.File.Copy(".\\Character Images\\Komachi.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Iku Nagae":
+                    System.IO.File.Copy(".\\Character Images\\Iku.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+                case "Tenshi Hinanawi":
+                    System.IO.File.Copy(".\\Character Images\\Tenshi.png", ".\\Scoreboard Output\\Player 1 Character.png", true);
+                    break;
+            }
+            switch (player2Character.SelectedItem)
+            {
+                case "Sanae Kochiya":
+                    System.IO.File.Copy(".\\Character Images\\Sanae.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Cirno":
+                    System.IO.File.Copy(".\\Character Images\\Cirno.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Hong Meiling":
+                    System.IO.File.Copy(".\\Character Images\\Meiling.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Utsuho Reiuji":
+                    System.IO.File.Copy(".\\Character Images\\Utsuho.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Suwako Moriya":
+                    System.IO.File.Copy(".\\Character Images\\Suwako.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Reimu Hakurei":
+                    System.IO.File.Copy(".\\Character Images\\Reimu.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Marisa Kirisame":
+                    System.IO.File.Copy(".\\Character Images\\Marisa.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Alice Margatroid":
+                    System.IO.File.Copy(".\\Character Images\\Alice.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Patchouli Knowledge":
+                    System.IO.File.Copy(".\\Character Images\\Patchouli.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Sakuya Izayoi":
+                    System.IO.File.Copy(".\\Character Images\\Sakuya.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Youmu Konpaku":
+                    System.IO.File.Copy(".\\Character Images\\Youmu.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Remilia Scarlet":
+                    System.IO.File.Copy(".\\Character Images\\Remilia.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Yuyuko Saigyouji":
+                    System.IO.File.Copy(".\\Character Images\\Yuyuko.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Yukari Yakumo":
+                    System.IO.File.Copy(".\\Character Images\\Yukari.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Suika Ibuki":
+                    System.IO.File.Copy(".\\Character Images\\Suika.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Reisen Udongein Inaba":
+                    System.IO.File.Copy(".\\Character Images\\Reisen.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Aya Shameimaru":
+                    System.IO.File.Copy(".\\Character Images\\Aya.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Komachi Onozuka":
+                    System.IO.File.Copy(".\\Character Images\\Komachi.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Iku Nagae":
+                    System.IO.File.Copy(".\\Character Images\\Iku.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+                case "Tenshi Hinanawi":
+                    System.IO.File.Copy(".\\Character Images\\Tenshi.png", ".\\Scoreboard Output\\Player 2 Character.png", true);
+                    break;
+            }
         }
 
         private void resetButton_Click(object sender, EventArgs e)
@@ -228,6 +358,8 @@ namespace RivxiaBracketUpdater
             miscBox2.Text = "Misc Text 2";
             miscBox3.Text = "Misc Text 3";
             miscBox4.Text = "Misc Text 4";
+            player1Character.Text = "Player 1 Character";
+            player2Character.Text = "Player 2 Character";
 
             ws1.Text = "Player 1";
             ws2.Text = "Player 2";
@@ -251,5 +383,16 @@ namespace RivxiaBracketUpdater
             lf2.Text = "";
             winner.Text = "";
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void player2Character_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

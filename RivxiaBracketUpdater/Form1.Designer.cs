@@ -106,6 +106,8 @@
             this.ws1 = new System.Windows.Forms.TextBox();
             this.updateButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
+            this.player1Character = new System.Windows.Forms.ComboBox();
+            this.player2Character = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player2Score)).BeginInit();
@@ -120,11 +122,13 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(543, 411);
+            this.tabControl1.Size = new System.Drawing.Size(543, 454);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.player2Character);
+            this.tabPage1.Controls.Add(this.player1Character);
             this.tabPage1.Controls.Add(this.miscBox4);
             this.tabPage1.Controls.Add(this.miscBox3);
             this.tabPage1.Controls.Add(this.miscBox2);
@@ -151,7 +155,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(535, 385);
+            this.tabPage1.Size = new System.Drawing.Size(535, 428);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Scoreboard";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -159,7 +163,7 @@
             // 
             // miscBox4
             // 
-            this.miscBox4.Location = new System.Drawing.Point(22, 356);
+            this.miscBox4.Location = new System.Drawing.Point(22, 384);
             this.miscBox4.Name = "miscBox4";
             this.miscBox4.Size = new System.Drawing.Size(477, 20);
             this.miscBox4.TabIndex = 22;
@@ -167,7 +171,7 @@
             // 
             // miscBox3
             // 
-            this.miscBox3.Location = new System.Drawing.Point(22, 330);
+            this.miscBox3.Location = new System.Drawing.Point(22, 358);
             this.miscBox3.Name = "miscBox3";
             this.miscBox3.Size = new System.Drawing.Size(477, 20);
             this.miscBox3.TabIndex = 21;
@@ -175,7 +179,7 @@
             // 
             // miscBox2
             // 
-            this.miscBox2.Location = new System.Drawing.Point(22, 304);
+            this.miscBox2.Location = new System.Drawing.Point(22, 332);
             this.miscBox2.Name = "miscBox2";
             this.miscBox2.Size = new System.Drawing.Size(477, 20);
             this.miscBox2.TabIndex = 20;
@@ -183,7 +187,7 @@
             // 
             // miscBox1
             // 
-            this.miscBox1.Location = new System.Drawing.Point(22, 278);
+            this.miscBox1.Location = new System.Drawing.Point(22, 306);
             this.miscBox1.Name = "miscBox1";
             this.miscBox1.Size = new System.Drawing.Size(477, 20);
             this.miscBox1.TabIndex = 19;
@@ -192,7 +196,7 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(22, 263);
+            this.label3.Location = new System.Drawing.Point(22, 291);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(479, 2);
             this.label3.TabIndex = 18;
@@ -201,7 +205,7 @@
             // miscellaneousTab
             // 
             this.miscellaneousTab.AutoSize = true;
-            this.miscellaneousTab.Location = new System.Drawing.Point(19, 240);
+            this.miscellaneousTab.Location = new System.Drawing.Point(19, 268);
             this.miscellaneousTab.Name = "miscellaneousTab";
             this.miscellaneousTab.Size = new System.Drawing.Size(74, 13);
             this.miscellaneousTab.TabIndex = 17;
@@ -209,7 +213,7 @@
             // 
             // swapButton2
             // 
-            this.swapButton2.Location = new System.Drawing.Point(223, 175);
+            this.swapButton2.Location = new System.Drawing.Point(223, 203);
             this.swapButton2.Name = "swapButton2";
             this.swapButton2.Size = new System.Drawing.Size(75, 46);
             this.swapButton2.TabIndex = 16;
@@ -219,7 +223,7 @@
             // 
             // commentator2Twitter
             // 
-            this.commentator2Twitter.Location = new System.Drawing.Point(347, 201);
+            this.commentator2Twitter.Location = new System.Drawing.Point(347, 229);
             this.commentator2Twitter.Name = "commentator2Twitter";
             this.commentator2Twitter.Size = new System.Drawing.Size(152, 20);
             this.commentator2Twitter.TabIndex = 15;
@@ -228,7 +232,7 @@
             // 
             // commentator2Name
             // 
-            this.commentator2Name.Location = new System.Drawing.Point(347, 175);
+            this.commentator2Name.Location = new System.Drawing.Point(347, 203);
             this.commentator2Name.Name = "commentator2Name";
             this.commentator2Name.Size = new System.Drawing.Size(152, 20);
             this.commentator2Name.TabIndex = 14;
@@ -236,7 +240,7 @@
             // 
             // commentator1Twitter
             // 
-            this.commentator1Twitter.Location = new System.Drawing.Point(22, 201);
+            this.commentator1Twitter.Location = new System.Drawing.Point(22, 229);
             this.commentator1Twitter.Name = "commentator1Twitter";
             this.commentator1Twitter.Size = new System.Drawing.Size(152, 20);
             this.commentator1Twitter.TabIndex = 13;
@@ -244,7 +248,7 @@
             // 
             // commentator1Name
             // 
-            this.commentator1Name.Location = new System.Drawing.Point(22, 175);
+            this.commentator1Name.Location = new System.Drawing.Point(22, 203);
             this.commentator1Name.Name = "commentator1Name";
             this.commentator1Name.Size = new System.Drawing.Size(152, 20);
             this.commentator1Name.TabIndex = 12;
@@ -253,7 +257,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(22, 160);
+            this.label2.Location = new System.Drawing.Point(22, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(479, 2);
             this.label2.TabIndex = 11;
@@ -262,7 +266,7 @@
             // commentaryLabel
             // 
             this.commentaryLabel.AutoSize = true;
-            this.commentaryLabel.Location = new System.Drawing.Point(19, 137);
+            this.commentaryLabel.Location = new System.Drawing.Point(19, 165);
             this.commentaryLabel.Name = "commentaryLabel";
             this.commentaryLabel.Size = new System.Drawing.Size(65, 13);
             this.commentaryLabel.TabIndex = 10;
@@ -270,7 +274,7 @@
             // 
             // setBox
             // 
-            this.setBox.Location = new System.Drawing.Point(22, 100);
+            this.setBox.Location = new System.Drawing.Point(22, 129);
             this.setBox.Name = "setBox";
             this.setBox.Size = new System.Drawing.Size(477, 20);
             this.setBox.TabIndex = 9;
@@ -287,21 +291,21 @@
             // 
             // player2Score
             // 
-            this.player2Score.Location = new System.Drawing.Point(304, 59);
+            this.player2Score.Location = new System.Drawing.Point(304, 73);
             this.player2Score.Name = "player2Score";
             this.player2Score.Size = new System.Drawing.Size(37, 20);
             this.player2Score.TabIndex = 7;
             // 
             // player1Score
             // 
-            this.player1Score.Location = new System.Drawing.Point(180, 59);
+            this.player1Score.Location = new System.Drawing.Point(180, 74);
             this.player1Score.Name = "player1Score";
             this.player1Score.Size = new System.Drawing.Size(37, 20);
             this.player1Score.TabIndex = 6;
             // 
             // swapButton
             // 
-            this.swapButton.Location = new System.Drawing.Point(223, 48);
+            this.swapButton.Location = new System.Drawing.Point(223, 59);
             this.swapButton.Name = "swapButton";
             this.swapButton.Size = new System.Drawing.Size(75, 46);
             this.swapButton.TabIndex = 5;
@@ -406,7 +410,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(535, 385);
+            this.tabPage2.Size = new System.Drawing.Size(535, 428);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Top 8 Bracket";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -840,7 +844,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(456, 430);
+            this.updateButton.Location = new System.Drawing.Point(460, 473);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(96, 23);
             this.updateButton.TabIndex = 1;
@@ -850,7 +854,7 @@
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(354, 430);
+            this.resetButton.Location = new System.Drawing.Point(358, 473);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(96, 23);
             this.resetButton.TabIndex = 2;
@@ -858,11 +862,73 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
+            // player1Character
+            // 
+            this.player1Character.FormattingEnabled = true;
+            this.player1Character.Items.AddRange(new object[] {
+            "Alice Margatroid",
+            "Aya Shameimaru",
+            "Cirno",
+            "Iku Nagae",
+            "Komachi Onozuka",
+            "Marisa Kirisame",
+            "Hong Meiling",
+            "Patchouli Knowledge",
+            "Reimu Hakurei",
+            "Reisen Udongein Inaba",
+            "Remilia Scarlet",
+            "Sakuya Izayoi",
+            "Sanae Kochiya",
+            "Suika Ibuki",
+            "Suwako Moriya",
+            "Tenshi Hinanawi",
+            "Utsuho Reiuji",
+            "Youmu Konpaku",
+            "Yukari Yakumo",
+            "Yuyuko Saigyouji"});
+            this.player1Character.Location = new System.Drawing.Point(22, 99);
+            this.player1Character.Name = "player1Character";
+            this.player1Character.Size = new System.Drawing.Size(152, 21);
+            this.player1Character.TabIndex = 23;
+            this.player1Character.Text = "Player 1 Character";
+            this.player1Character.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // player2Character
+            // 
+            this.player2Character.FormattingEnabled = true;
+            this.player2Character.Items.AddRange(new object[] {
+            "Alice Margatroid",
+            "Aya Shameimaru",
+            "Cirno",
+            "Iku Nagae",
+            "Komachi Onozuka",
+            "Marisa Kirisame",
+            "Hong Meiling",
+            "Patchouli Knowledge",
+            "Reimu Hakurei",
+            "Reisen Udongein Inaba",
+            "Remilia Scarlet",
+            "Sakuya Izayoi",
+            "Sanae Kochiya",
+            "Suika Ibuki",
+            "Suwako Moriya",
+            "Tenshi Hinanawi",
+            "Utsuho Reiuji",
+            "Youmu Konpaku",
+            "Yukari Yakumo",
+            "Yuyuko Saigyouji"});
+            this.player2Character.Location = new System.Drawing.Point(347, 99);
+            this.player2Character.Name = "player2Character";
+            this.player2Character.Size = new System.Drawing.Size(152, 21);
+            this.player2Character.TabIndex = 24;
+            this.player2Character.Text = "Player 2 Character";
+            this.player2Character.SelectedIndexChanged += new System.EventHandler(this.player2Character_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 462);
+            this.ClientSize = new System.Drawing.Size(563, 508);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.tabControl1);
@@ -959,6 +1025,8 @@
         private System.Windows.Forms.TextBox lro3;
         private System.Windows.Forms.TextBox lro2;
         private System.Windows.Forms.TextBox lro1;
+        private System.Windows.Forms.ComboBox player1Character;
+        private System.Windows.Forms.ComboBox player2Character;
     }
 }
 
