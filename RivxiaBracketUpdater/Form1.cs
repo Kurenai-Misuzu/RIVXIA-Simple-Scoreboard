@@ -16,32 +16,33 @@ namespace RivxiaBracketUpdater
         {
             InitializeComponent();
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void textBox3_TextChanged_1(object sender, EventArgs e)
         {
 
         }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-       
+        }
+        private void player2Character_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
         // Methods that I use starts here.
 
-        private void swapButton_Click(object sender, EventArgs e)
+        private void swapButton_Click(object sender, EventArgs e) // SWAP PLAYER INFO
         {
             String tempName = player1Name.Text;
             String tempTwitter = player1Twitter.Text;
@@ -56,8 +57,7 @@ namespace RivxiaBracketUpdater
             player1Score.Value = player2Score.Value;
             player2Score.Value = tempScore;
         }
-
-        private void swapButton2_Click(object sender, EventArgs e)
+        private void swapButton2_Click(object sender, EventArgs e) // SWAP COMMENTATOR INFO
         {
             String tempName = commentator1Name.Text;
             String tempTwitter = commentator1Twitter.Text;
@@ -66,114 +66,93 @@ namespace RivxiaBracketUpdater
             commentator1Twitter.Text = commentator2Twitter.Text;
             commentator2Twitter.Text = tempTwitter;
         }
-
         private void ws1Win_Click(object sender, EventArgs e)
         {
             wf1.Text = ws1.Text;
             lq3.Text = ws2.Text;
         }
-
         private void ws2Win_Click(object sender, EventArgs e)
         {
             wf1.Text = ws2.Text;
             lq3.Text = ws1.Text;
         }
-
         private void ws3Win_Click(object sender, EventArgs e)
         {
             wf2.Text = ws3.Text;
             lq1.Text = ws4.Text;
         }
-
         private void ws4Win_Click(object sender, EventArgs e)
         {
             wf2.Text = ws4.Text;
             lq1.Text = ws3.Text;
         }
-
         private void lro1Win_Click(object sender, EventArgs e)
         {
             lq2.Text = lro1.Text;
         }
-
         private void lro2Win_Click(object sender, EventArgs e)
         {
             lq2.Text = lro2.Text;
         }
-
         private void lro3Win_Click(object sender, EventArgs e)
         {
             lq4.Text = lro3.Text;
         }
-
         private void lro4Win_Click(object sender, EventArgs e)
         {
             lq4.Text = lro4.Text;
         }
-
         private void button9_Click(object sender, EventArgs e) // wf1 WIN
         {
             gf1.Text = wf1.Text;
             lf1.Text = wf2.Text;
         }
-
         private void wf2Win_Click(object sender, EventArgs e)
         {
             gf1.Text = wf2.Text;
             lf1.Text = wf1.Text;
         }
-
         private void lq1Win_Click(object sender, EventArgs e)
         {
             ls1.Text = lq1.Text;
         }
-
         private void lq2Win_Click(object sender, EventArgs e)
         {
             ls1.Text = lq2.Text;
         }
-
         private void lq3Win_Click(object sender, EventArgs e)
         {
             ls2.Text = lq3.Text;
         }
-
         private void lq4Win_Click(object sender, EventArgs e)
         {
             ls2.Text = lq4.Text;
         }
-
         private void ls1Win_Click(object sender, EventArgs e)
         {
             lf2.Text = ls1.Text;
         }
-
         private void ls2Win_Click(object sender, EventArgs e)
         {
             lf2.Text = ls2.Text;
         }
-
         private void lf1Win_Click(object sender, EventArgs e)
         {
             gf2.Text = lf1.Text;
         }
-
         private void lf2Win_Click(object sender, EventArgs e)
         {
             gf2.Text = lf2.Text;
         }
-
         private void gf1Win_Click(object sender, EventArgs e)
         {
             winner.Text = gf1.Text;
         }
-
         private void gf2Win_Click(object sender, EventArgs e)
         {
             winner.Text = gf2.Text;
         }
-
-        private void updateButton_Click(object sender, EventArgs e) //UPDATE
+        private void updateButton_Click(object sender, EventArgs e) //UPDATE BUTTON
         {
             System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 1 Name.txt", player1Name.Text);
             System.IO.File.WriteAllText(".\\Scoreboard Output\\Player 2 Name.txt", player2Name.Text);
@@ -340,8 +319,7 @@ namespace RivxiaBracketUpdater
                     break;
             }
         }
-
-        private void resetButton_Click(object sender, EventArgs e)
+        private void resetButton_Click(object sender, EventArgs e) //RESET BUTTON
         {
             player1Name.Text = "Player 1";
             player2Name.Text = "Player 2";
@@ -384,15 +362,6 @@ namespace RivxiaBracketUpdater
             winner.Text = "";
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void player2Character_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }
